@@ -1,26 +1,66 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary: #3a0ca3;
+  --colour-1 : #4361EE;
+  --colour-2 : #4CC9F0;
+  --colour-3 : #7209B7;
+  --colour-4 : #F72585;
+  --text-colour-1 : #0B090A;
+  --text-colour-2: #2B2B2B;
+  --text-colour-3: #808080;
+  --text-colour-4: #AAAAAA;
+  --text-colour-5: #D4D4D4;
+
 }
 
 @theme inline {
   --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
   }
 }
 
 body {
   background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  @apply font-semibold text-[57.3px] leading-[65px];
+}
+
+.h2-semi-bold {
+  @apply font-semibold text-[39.8px] leading-[47px];
+}
+
+.h2-medium {
+  @apply font-medium text-[39.8px] leading-[47px];
+}
+
+.h3-semibold {
+  @apply font-semibold text-[27.6px] leading-normal;
+}
+
+.h3-medium {
+  @apply font-medium text-[27.6px] leading-normal;
+}
+
+.h4-medium {
+  @apply font-medium text-[19.4px] leading-normal;
+}
+
+.h5-buttons {
+  @apply font-medium text-[16px] leading-normal;
+}
+
+.paragraph-regular {
+  @apply font-normal text-[16px] leading-[26px];
+}
+
+.small-paragraph {
+  @apply font-normal text-[13.3px] leading-[22px];
 }
