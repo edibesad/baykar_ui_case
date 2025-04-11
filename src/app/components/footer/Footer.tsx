@@ -1,13 +1,26 @@
-export const Footer = () => {
+"use client";
+
+import { QuickLinks } from "./components/QuickLinks";
+import { Discovery } from "./components/Discovery";
+import { Newsletter } from "./components/Newsletter";
+import { Bottombar } from "./components/Bottombar";
+import { Info } from "./components/Info";
+
+export function Footer() {
   return (
-    <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-      <p>© 2023 Your Company</p>
-      <a href="/privacy-policy" className="text-blue-500 hover:underline">
-        Privacy Policy
-      </a>
-      <a href="/terms-of-service" className="text-blue-500 hover:underline">
-        Terms of Service
-      </a>
+    <footer className="bg-[var(--colour-1)]/10">
+      <div className="max-w-7xl mx-auto py-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 text-[var(--text-colour-2)]">
+          <Info />
+
+          <QuickLinks />
+
+          <Discovery />
+
+          <Newsletter />
+        </div>
+      </div>
+      <Bottombar />
     </footer>
   );
-};
+}

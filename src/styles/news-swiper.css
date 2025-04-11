@@ -1,0 +1,22 @@
+.news-swiper-pagination {
+  position: relative;
+  margin-top: 20px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.news-swiper-pagination .swiper-pagination-bullet {
+  width: 100px;
+  height: 3px;
+  background-color: white;
+  opacity: 0.5;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  margin: 0 8px;
+}
+
+.news-swiper-pagination .swiper-pagination-bullet-active {
+  opacity: 1;
+}

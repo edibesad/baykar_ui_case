@@ -1,14 +1,14 @@
 import { Footer } from "./components/footer/Footer";
 import { Information } from "./components/Information";
 import { Header } from "./components/header/Header";
-import { PageContent } from "./components/page-content/PageContent";
+import { Features } from "./features/Features";
 
 export default function Home() {
   return (
-    <div className="">
+    <div>
       <Information />
       <Header />
-      <PageContent />
+      <Features />
       <Footer />
     </div>
   );

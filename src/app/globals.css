@@ -2,16 +2,15 @@
 
 :root {
   --primary: #3a0ca3;
-  --colour-1 : #4361EE;
-  --colour-2 : #4CC9F0;
-  --colour-3 : #7209B7;
-  --colour-4 : #F72585;
-  --text-colour-1 : #0B090A;
-  --text-colour-2: #2B2B2B;
+  --colour-1: #4361ee;
+  --colour-2: #4cc9f0;
+  --colour-3: #7209b7;
+  --colour-4: #f72585;
+  --text-colour-1: #0b090a;
+  --text-colour-2: #2b2b2b;
   --text-colour-3: #808080;
-  --text-colour-4: #AAAAAA;
-  --text-colour-5: #D4D4D4;
-
+  --text-colour-4: #aaaaaa;
+  --text-colour-5: #d4d4d4;
 }
 
 @theme inline {
@@ -26,14 +25,14 @@
 
 body {
   background: var(--background);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 h1 {
   @apply font-semibold text-[57.3px] leading-[65px];
 }
 
-.h2-semi-bold {
+.h2-semibold {
   @apply font-semibold text-[39.8px] leading-[47px];
 }
 
@@ -63,4 +62,8 @@ h1 {
 
 .small-paragraph {
   @apply font-normal text-[13.3px] leading-[22px];
+}
+
+.shadow-custom {
+  box-shadow: 4px 10px 30px rgba(0, 0, 0, 0.15);
 }
