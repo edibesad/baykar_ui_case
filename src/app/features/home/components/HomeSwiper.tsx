@@ -25,7 +25,7 @@ export const HomeSwiper = () => {
 
   return (
     <div className="w-full h-full flex">
-      <div className="w-full h-full md:w-[580px] md:h-[351px]">
+      <div className="relative w-full h-full md:w-[580px] md:h-[351px]">
         <div className="rounded-[20px] overflow-hidden">
           <Swiper
             modules={[Pagination]}
@@ -39,7 +39,7 @@ export const HomeSwiper = () => {
           >
             {Array.from({ length: 5 }, (_, index) => (
               <SwiperSlide key={index}>
-                <div className="w-full aspect-[580/351]">
+                <div className="relative w-full aspect-[580/351]">
                   <Image
                     alt="room"
                     src="/image.png"
