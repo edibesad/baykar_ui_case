@@ -6,14 +6,12 @@ import { Testimonials } from "./testimonials/Tesimonials";
 
 export const Features = () => {
   return (
-    <main className="">
-      <div className="px-[30px]">
-        <HomeSection />
-        <About />
-        <Listings />
-        <News />
-        <Testimonials />
-      </div>
+    <main className="px-[30px]">
+      <HomeSection />
+      <About />
+      <Listings />
+      <News />
+      <Testimonials />
     </main>
   );
 };

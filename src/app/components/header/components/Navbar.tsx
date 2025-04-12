@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { NavbarElement } from "./NavbarElement";
+import { HamburgerMenu } from "./HamburgerMenu";
 
 export const Navbar = () => {
   return (
@@ -29,6 +30,7 @@ export const Navbar = () => {
           <h5 className="h5-buttons text-white">{"Add Listing"}</h5>
         </button>
       </div>
+      <HamburgerMenu />
     </div>
   );
 };
