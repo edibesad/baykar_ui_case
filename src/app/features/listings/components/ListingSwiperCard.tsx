@@ -4,7 +4,7 @@ import { ListingSwiperCardCampaign } from "./ListingSwiperCardCampaign";
 
 export const ListingSwiperCard = ({ houseInfo }: { houseInfo: HouseInfo }) => {
   return (
-    <div className="md:h-[500px] md:w-[340px]">
+    <div className="md:h-[500px] md:w-[340px] cursor-pointer">
       <div className="relative">
         <ListingSwiperCardCampaign type={houseInfo.state} />
 

@@ -8,6 +8,7 @@ import { useEffect, useRef, useState } from "react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "@/styles/testimonial-swiper.css";
+import { Bubble } from "@/app/components/Bubble";
 
 const testimonails = [
   {
@@ -53,10 +54,12 @@ export const TestimonialsSwiper = ({
   if (!mounted) return null;
 
   return (
-    <div className="flex md:flex-row-reverse flex-col-reverse">
+    <div className="relative flex md:flex-row-reverse flex-col-reverse">
+      <Bubble width={60} height={60} top={0} left={0} zIndex={-10} />
+
       <div ref={paginationRef} className="testimonial-swiper-pagination" />
       <Swiper
-        className="w-full h-full"
+        className="w-full h-full z-20"
         onSwiper={setSwiperInstance}
         modules={[Navigation, Pagination]}
         slidesPerView={1}
@@ -67,7 +70,7 @@ export const TestimonialsSwiper = ({
         }}
       >
         {testimonails.map((item, index) => (
-          <SwiperSlide key={index}>
+          <SwiperSlide key={index} className="z-20">
             <TestimonialCard
               text={item.text}
               image={item.image}

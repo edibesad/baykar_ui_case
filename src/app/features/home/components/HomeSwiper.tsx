@@ -9,6 +9,7 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "@/styles/home-swiper.css";
+import { Bubble } from "@/app/components/Bubble";
 
 export const HomeSwiper = () => {
   const [swiperInstance, setSwiperInstance] = useState<SwiperClass | null>(
@@ -26,6 +27,7 @@ export const HomeSwiper = () => {
   return (
     <div className="w-full h-full flex">
       <div className="relative w-full h-full md:w-[580px] md:h-[351px]">
+        <Bubble right={-30} top={-40} width={60} height={60} rotate="30deg" />
         <div className="rounded-[20px] overflow-hidden">
           <Swiper
             modules={[Pagination]}

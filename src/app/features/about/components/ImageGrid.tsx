@@ -1,3 +1,4 @@
+import { Bubble } from "@/app/components/Bubble";
 import Image from "next/image";
 
 export const ImageGrid = () => {
@@ -23,7 +24,7 @@ export const ImageGrid = () => {
           />
         </div>
         <div className="relative row-span-5">
-          <div className="absolute rounded-full w-[60px] h-[60px] -bottom-8 left-20 z-10 bg-gradient-to-tr from-[#4361EE00] to-[var(--colour-1)] opacity-50" />
+          <Bubble height={60} width={60} bottom={-30} left={70} zIndex={10} />
           <Image
             alt="livingroom"
             src={"/livingoom.png"}

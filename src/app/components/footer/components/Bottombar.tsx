@@ -4,9 +4,9 @@ export const Bottombar = () => {
   return (
     <div className="relative">
       <div className="paragraph-regular text-[var(--text-colour-4)] h-12">
-        <div className="flex justify-between items-center gap-4 mx-auto max-w-screen-xl h-full">
+        <div className="flex justify-center md:justify-between items-center gap-4 mx-auto max-w-screen-xl h-full">
           <p>© Company - All rights reserved</p>
-          <div className="flex gap-4">
+          <div className="hidden md:flex gap-4">
             <Link
               href="#"
               className="text-muted-foreground hover:text-primary transition-colors"

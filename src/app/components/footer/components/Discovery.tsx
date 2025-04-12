@@ -2,18 +2,13 @@ import Link from "next/link";
 
 export const Discovery = () => {
   return (
-    <div>
+    <div className="md:block hidden">
       <h3 className="h4-medium text-[var(--text-colour-1)] mb-4">Discovery</h3>
-      <ul className="space-y-2">
+      <ul className="space-y-1 text-lg">
         {["Canada", "United States", "Germany", "Africa", "India"].map(
           (item) => (
             <li key={item}>
-              <Link
-                href="#"
-                className="text-muted-foreground hover:text-primary transition-colors"
-              >
-                {item}
-              </Link>
+              <Link href="#">{item}</Link>
             </li>
           )
         )}

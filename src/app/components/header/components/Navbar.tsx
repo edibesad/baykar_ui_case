@@ -5,7 +5,7 @@ export const Navbar = () => {
   return (
     <div className="sticky top-0 z-50 flex h-20 w-screen sm:px-[100px] px-[30px] items-center justify-between">
       <div className="hidden sm:flex items-center h-[37px]">
-        <NavbarElement text="Home" />
+        <NavbarElement text="Home" active />
         <NavbarElement text="About" />
         <NavbarElement text="Listings" />
         <NavbarElement text="Services" />
@@ -20,7 +20,7 @@ export const Navbar = () => {
         </div>
       </div>
       <div className="hidden sm:flex items-center gap-[15px]">
-        <div className="flex items-center h-[18px] gap-2.5">
+        <div className="flex items-center h-[18px] gap-2.5 cursor-pointer">
           <Image alt="user" src="/user.svg" width={18} height={18} />
           <h5 className="h5-buttons"> {"Login/Register"}</h5>
         </div>
