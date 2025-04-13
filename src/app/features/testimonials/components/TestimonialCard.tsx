@@ -23,7 +23,7 @@ export const TestimonialCard = ({
             className="object-contain"
           />
         </div>
-        <h4 className="h4-medium md:h5-buttons mt-5 md:h-32 h-[15rem]">
+        <h4 className="h4-medium md:h5-buttons mt-5 md:h-32 h-[16rem]">
           {text}
         </h4>
         <div className="w-full h-[1px] bg-[var(--text-colour-5)] mt-10" />
