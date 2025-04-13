@@ -54,7 +54,7 @@ export const TestimonialsSwiper = ({
   if (!mounted) return null;
 
   return (
-    <div className="relative flex md:flex-row-reverse flex-col-reverse">
+    <div className="relative flex lg:flex-row-reverse flex-col-reverse">
       <Bubble width={60} height={60} top={0} left={0} zIndex={-10} />
 
       <div ref={paginationRef} className="testimonial-swiper-pagination" />

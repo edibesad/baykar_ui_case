@@ -2,7 +2,7 @@ import { HomeSwiper } from "./HomeSwiper";
 
 export const HomeSwiperPart = () => {
   return (
-    <div className="flex">
+    <div className="flex items-center justify-center w-full ">
       <div className="flex flex-col w-full h-full">
         <h2 className="h2-semibold mt-5">Find a perfect home you love..!</h2>
         <p className="paragraph-regular text-[var(--text-colour-3)] mt-10">

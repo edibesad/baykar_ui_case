@@ -25,7 +25,7 @@ export const HomeSwiper = () => {
   }, [swiperInstance]);
 
   return (
-    <div className="w-full h-full flex">
+    <div className="w-full h-full flex items-center justify-center">
       <div className="relative w-full h-full md:w-[580px] md:h-[351px]">
         <Bubble right={-30} top={-40} width={60} height={60} rotate="30deg" />
         <div className="rounded-[20px] overflow-hidden">

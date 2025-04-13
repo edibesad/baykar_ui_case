@@ -66,10 +66,10 @@ export const Listings = () => {
           <ListingFilterButton message="Rent" />
         </div>
       </div>
-      <div className="hidden md:block">
+      <div className="hidden lg:block">
         <ListingSwiper listings={listings} />
       </div>
-      <div className="flex flex-col items-center justify-center md:hidden ">
+      <div className="flex flex-col items-center justify-center lg:hidden ">
         {listings.map((houseInfo, index) => (
           <div key={index} className="mb-5">
             <ListingSwiperCard houseInfo={houseInfo} />

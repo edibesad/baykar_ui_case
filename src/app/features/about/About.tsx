@@ -15,7 +15,7 @@ export const About = () => {
       <span className="text-[var(--colour-1)] text-[19.4px] font-medium tracking-widest">
         WHO ARE WE
       </span>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-[30px] pt-[20px] md:pt-[40px]">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-[30px] pt-[20px] md:pt-[40px]">
         <div>
           <h2 className="hidden md:block h2-semibold text-[var(--text-colour-2)]">
             Assisting individuals in locating the appropriate real estate.
@@ -28,12 +28,12 @@ export const About = () => {
             since the 1500s, when an unknown printer took a galley of type and
             scrambled it
           </p>
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <AboutCards />
           </div>
         </div>
         <ImageGrid />
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <AboutCards />
         </div>
       </div>

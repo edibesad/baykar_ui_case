@@ -30,7 +30,7 @@ export function NewsSwiper({ slides }: { slides: NewInfo[] }) {
   if (!mounted) return null;
 
   return (
-    <div className="relative w-full py-16 text-white hidden md:block">
+    <div className="relative w-full py-16 text-white hidden lg:block">
       <div className="container mx-auto w-[1120px] px-4">
         <Swiper
           onSwiper={setSwiperInstance}

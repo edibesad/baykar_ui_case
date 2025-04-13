@@ -14,8 +14,8 @@ export const TestimonialCard = ({
 }) => {
   return (
     <div className="flex justify-center items-center py-5 w-full h-full z-20">
-      <div className="shadow-custom rounded-4xl md:h-96 w-[36rem] px-14 py-9">
-        <div className="relative h-12 md:h-10 w-16">
+      <div className="shadow-custom rounded-4xl lg:h-96 w-[36rem] px-14 py-9">
+        <div className="relative h-12 lg:h-10 w-16">
           <Image
             alt="quote"
             src={"/quote.svg"}
@@ -23,7 +23,7 @@ export const TestimonialCard = ({
             className="object-contain"
           />
         </div>
-        <h4 className="h4-medium md:h5-buttons mt-5 md:h-32 h-[16rem]">
+        <h4 className="h4-medium lg:h5-buttons mt-5 lg:h-32 lg:min-h-[0] min-h-[16rem]">
           {text}
         </h4>
         <div className="w-full h-[1px] bg-[var(--text-colour-5)] mt-10" />

@@ -79,20 +79,20 @@ const news: NewInfo[] = [
 
 export const News = () => {
   return (
-    <div className="w-screen relative left-1/2 right-1/2 -mx-[50vw] bg-[var(--primary)] md:h-[900px]">
-      <div className="max-w-screen-xl mx-auto px-4 md:pt-0 md:pb-0 pt-10 pb-[6.25rem] items-center flex flex-col justify-center h-full">
+    <div className="w-screen relative left-1/2 right-1/2 -mx-[50vw] bg-[var(--primary)] lg:h-[900px]">
+      <div className="max-w-screen-xl mx-auto px-4 lg:pt-0 lg:pb-0 pt-10 pb-[6.25rem] items-center flex flex-col justify-center h-full">
         <h4 className="text-white text-[19.4px] tracking-widest">
           WHAT’S TRENDING
         </h4>
-        <h2 className="hidden md:block h2-semibold text-white mt-[1.8rem]">
+        <h2 className="hidden lg:block h2-semibold text-white mt-[1.8rem]">
           Latest Blogs & Posts
         </h2>
-        <span className="h3-semibold md:hidden text-white mt-[1.2rem]">
+        <span className="h3-semibold lg:hidden text-white mt-[1.2rem]">
           Latest Blogs & Posts
         </span>
         <div>
           <NewsSwiper slides={news} />
-          <div className="md:hidden mt-[2.5rem]">
+          <div className="lg:hidden mt-[2.5rem]">
             <div className="flex flex-col gap-8">
               {news.slice(0, 3).map((slide, index) => (
                 <NewsCard key={index} newInfo={slide} />

@@ -4,8 +4,8 @@ import { HamburgerMenu } from "./HamburgerMenu";
 
 export const Navbar = () => {
   return (
-    <div className="sticky top-0 z-50 flex h-20 w-full sm:px-[100px] px-[30px] items-center justify-between bg-white shadow-sm">
-      <div className="hidden sm:flex items-center h-[37px]">
+    <div className="sticky top-0 z-50 flex h-20 w-full lg:px-[100px] px-[30px] items-center justify-between bg-white shadow-sm">
+      <div className="hidden lg:flex items-center h-[37px]">
         <NavbarElement text="Home" active />
         <NavbarElement text="About" />
         <NavbarElement text="Listings" />
@@ -22,7 +22,7 @@ export const Navbar = () => {
         </div>
       </div>
 
-      <div className="hidden sm:flex items-center gap-[15px]">
+      <div className="hidden md:flex items-center gap-[15px]">
         <div className="flex items-center h-[18px] gap-2.5 cursor-pointer">
           <Image alt="user" src="/user.svg" width={18} height={18} />
           <h5 className="h5-buttons"> {"Login/Register"}</h5>
@@ -33,7 +33,7 @@ export const Navbar = () => {
         </button>
       </div>
 
-      <div className="sm:hidden">
+      <div className="md:hidden">
         <HamburgerMenu />
       </div>
     </div>

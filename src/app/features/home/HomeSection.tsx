@@ -11,7 +11,7 @@ export const HomeSection = () => {
         <span className="text-[var(--colour-1)] text-[19.4px] font-medium tracking-widest">
           REAL ESTATE
         </span>
-        <div className="md:flex">
+        <div className="grid grid-cols-1 lg:grid-cols-2">
           <HomeSwiperPart />
           <HomeSearchPart />
         </div>

@@ -8,7 +8,7 @@ export const Newsletter = () => {
         Subscribe to our Newsletter!
       </h3>
       <div className="flex gap-2 md:justify-start justify-center">
-        <div className="w-[333px] sm:w-[350px] h-[60px] bg-white rounded-full flex items-center px-4 shadow-custom">
+        <div className="w-[333px] lg:w-[350px] h-[60px] bg-white rounded-full flex items-center px-4 shadow-custom">
           <input
             type="email"
             placeholder="Email Address"
