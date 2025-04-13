@@ -14,7 +14,9 @@ export const ListingSwiperCardCampaign = ({
         backgroundColor: theme.bg,
       }}
     >
-      <Image alt={theme.icon} src={theme.icon} width={20} height={20} />
+      <div className="relative h-5 w-5">
+        <Image alt={theme.icon} src={theme.icon} fill className="object-fill" />
+      </div>
       <h5 style={{ color: theme.textColor }} className={`h5-buttons`}>
         {theme.text}
       </h5>

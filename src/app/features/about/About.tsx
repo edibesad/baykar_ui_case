@@ -15,9 +15,12 @@ export const About = () => {
       <span className="text-[var(--colour-1)] text-[19.4px] font-medium tracking-widest">
         WHO ARE WE
       </span>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-[30px] pt-[60px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-[30px] pt-[20px] md:pt-[40px]">
         <div>
-          <h2 className="h2-semibold text-[var(--text-colour-2)]">
+          <h2 className="hidden md:block h2-semibold text-[var(--text-colour-2)]">
+            Assisting individuals in locating the appropriate real estate.
+          </h2>
+          <h2 className="md:hidden h3-semibold text-[var(--text-colour-2)]">
             Assisting individuals in locating the appropriate real estate.
           </h2>
           <p className="paragraph-regular text-[var(--text-colour-3)] mt-[30px]">

@@ -1,20 +1,12 @@
 import Image from "next/image";
 import { SelectBox } from "./SelectBox";
+import { HomeSearchPicker } from "./HomeSearchPicker";
 
 export const HomeSearchPart = () => {
   return (
     <div className="flex flex-col w-full h-full items-center justify-center pt-10 md:px-[30px]">
       <div className="w-[333px] md:w-[420px] h-full bg-white rounded-[20px] px-[30px] shadow-custom">
-        <div className="flex justify-around h-20 items-center text-center border-b-[1px] border-b-[var(--text-colour-4)]">
-          <div className="relative h-full items-center flex">
-            <h5 className="h-5-buttons text-[var(--primary)]">For Sale</h5>
-            <div className="absolute bottom-0 w-[150px] h-[3px] bg-[var(--primary)] left-1/2 -translate-x-1/2 "></div>
-          </div>
-          <div className="relative h-full items-center flex">
-            <h5 className="h-5-buttons ">For Rent</h5>
-            <div className="hidden absolute bottom-0 w-[150px] h-[3px] bg-[var(--primary)] left-1/2 -translate-x-1/2 "></div>
-          </div>
-        </div>
+        <HomeSearchPicker />
         <div className="pt-[50px] px-10">
           <div className="flex flex-col gap-[30px]">
             <input
@@ -39,7 +31,7 @@ export const HomeSearchPart = () => {
               height={14}
             />
             <p className="small-paragraph text-[var(--primary)]">
-              Advance Search
+              Advanced Search
             </p>
           </div>
           <button className="w-full h-[60px] bg-[var(--primary)] rounded-full flex gap-[10px] items-center justify-center mt-[61px] mb-[60px] cursor-pointer">

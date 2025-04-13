@@ -23,7 +23,7 @@ export const HomeSection = () => {
           </div>
           <h5 className="h5-buttons">72k+ Happy Customers!</h5>
         </div>
-        <div className="flex items-center justify-center rounded-full bg-white md:h-[100px] md:w-[320px] h-[100px] w-[333px] gap-[10px] py-[38px] px-5 shadow-custom">
+        <div className="flex items-center justify-center rounded-full bg-white md:h-[100px] md:w-[320px] h-[100px] w-[333px] gap-[20px] py-[38px] px-5 shadow-custom">
           <Image
             className="rounded-full aspect-square object-cover"
             alt="image2"

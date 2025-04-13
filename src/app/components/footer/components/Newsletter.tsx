@@ -4,7 +4,7 @@ import Image from "next/image";
 export const Newsletter = () => {
   return (
     <div>
-      <h3 className="text-lg font-semibold mb-4 md:text-start text-center">
+      <h3 className="h5-buttons mb-4 md:text-start text-center px-24 md:px-0 mt-5">
         Subscribe to our Newsletter!
       </h3>
       <div className="flex gap-2 md:justify-start justify-center">

@@ -6,7 +6,7 @@ import { Testimonials } from "./testimonials/Tesimonials";
 
 export const Features = () => {
   return (
-    <main className="px-[30px]">
+    <main className="md:px-[30px]">
       <HomeSection />
       <About />
       <Listings />

@@ -14,7 +14,7 @@ export const NewsCard = ({ newInfo }: { newInfo: NewInfo }) => {
           className="object-cover custom-shadow"
         />
 
-        <div className="absolute top-0 left-5 bg-white rounded-b-xl px-2 py-1 text-center shadow">
+        <div className="absolute min-w-[3.5rem] min-h-[3.25rem] top-0 left-5 bg-white rounded-b-xl px-2 py-1 text-center shadow">
           <h4 className="h-4-semibold text-[var(--text-colour-2)] leading-none">
             {date}
           </h4>

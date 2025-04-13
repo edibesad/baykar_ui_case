@@ -9,7 +9,7 @@ export function HamburgerMenu() {
     <>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="z-0 fixed top-5 right-5 text-white p-2 rounded-md md:hidden"
+        className="z-50 flex items-center justify-center"
       >
         <Image
           src={"hamburger-menu.svg"}

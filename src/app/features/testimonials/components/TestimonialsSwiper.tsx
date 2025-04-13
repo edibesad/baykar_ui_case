@@ -70,7 +70,7 @@ export const TestimonialsSwiper = ({
         }}
       >
         {testimonails.map((item, index) => (
-          <SwiperSlide key={index} className="z-20">
+          <SwiperSlide key={index} className="z-20 p-4">
             <TestimonialCard
               text={item.text}
               image={item.image}

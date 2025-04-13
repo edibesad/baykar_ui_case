@@ -49,7 +49,10 @@ export const Listings = () => {
       </span>
       <div className="flex flex-col md:flex-row md:justify-between pb-[50px]">
         <div>
-          <h2 className="h2-semibold text-[var(--text-colour-2)]">
+          <h2 className="hidden md:block h2-semibold text-[var(--text-colour-2)]">
+            Latest Listed Properties
+          </h2>
+          <h2 className="md:hidden h3-semibold text-[var(--text-colour-2)]">
             Latest Listed Properties
           </h2>
           <p className="paragraph-regular text-[var(--text-colour-3)] mt-[30px]">
@@ -72,7 +75,7 @@ export const Listings = () => {
             <ListingSwiperCard houseInfo={houseInfo} />
           </div>
         ))}
-        <div className="text-[var(--primary)] h5-buttons border border-[var(--primary)] rounded-full w-[233px] h-[49px] justify-center items-center flex">
+        <div className="text-[var(--primary)] h5-buttons border border-[var(--primary)] rounded-full w-[233px] h-[49px] justify-center items-center flex mt-10">
           View More Properties
         </div>
       </div>

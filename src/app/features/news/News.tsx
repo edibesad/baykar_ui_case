@@ -84,9 +84,12 @@ export const News = () => {
         <h4 className="text-white text-[19.4px] tracking-widest">
           WHAT’S TRENDING
         </h4>
-        <div className="h3-semibold md:h2-semibold text-white mt-[1.8rem]">
+        <h2 className="hidden md:block h2-semibold text-white mt-[1.8rem]">
           Latest Blogs & Posts
-        </div>
+        </h2>
+        <span className="h3-semibold md:hidden text-white mt-[1.2rem]">
+          Latest Blogs & Posts
+        </span>
         <div>
           <NewsSwiper slides={news} />
           <div className="md:hidden mt-[2.5rem]">
@@ -95,8 +98,8 @@ export const News = () => {
                 <NewsCard key={index} newInfo={slide} />
               ))}
             </div>
-            <button className="rounded-full bg-white px-8 py-5 mt-[3.75rem] border border-[var(--primary)] ">
-              <h5 className="h5-buttons text-[var(--primary-color)]">
+            <button className="rounded-full bg-white px-10 py-4 mt-[3.75rem] border border-[var(--primary)] ">
+              <h5 className="h5-buttons text-[var(--primary)]">
                 View more blogs
               </h5>
             </button>
